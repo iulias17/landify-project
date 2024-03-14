@@ -176,7 +176,11 @@ h6 {
   }
 }
 .header {
+<<<<<<< HEAD
   background-image: url(/images/Background-desktop.png);
+=======
+  background-image: url(./images/background.png);
+>>>>>>> 96e3fc7f6756cd217af2f04c6710af4e3dc59f30
   background-size: 100%;
   background-repeat: no-repeat;
 }
