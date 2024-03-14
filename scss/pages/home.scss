@@ -2,6 +2,7 @@
 
 .header {
   background-image: url(./images/Background-desktop.png);
+  background-image: url(./images/Background-desktop.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -64,9 +65,11 @@
     .section-hero {
       text-align: start;
     }
-    h1 {
-      font-size: 48px;
-      padding-top: 0;
+    .section-hero {
+      h1 {
+        font-size: 48px;
+        padding-top: 0;
+      }
     }
   }
 }
