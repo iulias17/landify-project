@@ -176,11 +176,7 @@ h6 {
   }
 }
 .header {
-<<<<<<< HEAD
-  background-image: url(/images/Background-desktop.png);
-=======
-  background-image: url(./images/background.png);
->>>>>>> 96e3fc7f6756cd217af2f04c6710af4e3dc59f30
+  background-image: url(./images/Background-desktop.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -220,7 +216,7 @@ h6 {
 
 @media screen and (max-width: 992px) {
   .header {
-    background-image: url(/images/Background-tablet.png);
+    background-image: url(./images/Background-tablet.png);
     background-size: 100%;
     background-repeat: no-repeat;
   }
@@ -233,25 +229,17 @@ h6 {
   }
 }
 @media screen and (max-width: 768px) {
-  .header {
-    background-image: url(/images/Background-tablet.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
+  .header .section-hero {
+    text-align: start;
   }
-  .section-hero {
-    flex-direction: column;
-    padding: 80px 0 80px 0;
-    align-items: center;
-    gap: 80px;
-  }
-  .section-hero h1 {
+  .header .section-hero h1 {
     font-size: 48px;
     padding-top: 0;
   }
 }
 @media screen and (max-width: 576px) {
   .header {
-    background-image: url(/images/Background-mobile.png);
+    background-image: url(./images/Background-mobile.png);
     background-size: 100%;
     background-repeat: no-repeat;
   }
