@@ -1,7 +1,7 @@
 // Aici punem toate stilurile pentru sectiuni
 
 .header {
-  background-image: url(/images/Background-desktop.png);
+  background-image: url(./images/Background-desktop.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -45,7 +45,7 @@
 }
 @media screen and (max-width: 992px) {
   .header {
-    background-image: url(/images/Background-tablet.png);
+    background-image: url(./images/Background-tablet.png);
     background-size: 100%;
     background-repeat: no-repeat;
   }
@@ -60,18 +60,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .header {
-    background-image: url(/images/Background-tablet.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-
   .section-hero {
-    flex-direction: column;
-    padding: 80px 0 80px 0;
-    align-items: center;
-    gap: 80px;
-
     h1 {
       font-size: 48px;
       padding-top: 0;
@@ -81,7 +70,7 @@
 
 @media screen and (max-width: 576px) {
   .header {
-    background-image: url(/images/Background-mobile.png);
+    background-image: url(./images/Background-mobile.png);
     background-size: 100%;
     background-repeat: no-repeat;
   }
