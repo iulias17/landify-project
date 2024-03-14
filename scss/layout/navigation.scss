@@ -12,6 +12,15 @@
   padding: 20px 0;
 }
 
+.apps {
+  display: flex;
+  gap: 12px;
+
+  a {
+    display: inline-flex;
+  }
+}
+
 .navbar .logo {
   margin-right: 32px;
 }
@@ -21,6 +30,7 @@
   margin-right: auto;
   list-style: none;
   gap: 8px;
+  text-align: center;
 }
 
 .navbar .links a {
@@ -30,6 +40,7 @@
   padding: 4px 8px;
   font-size: 12px;
   transition: 0.2s ease;
+  display: inline-flex;
 }
 
 .navbar .links a:hover {
@@ -50,6 +61,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
   .navbar .logo a {
     font-size: 1.5rem;
   }
