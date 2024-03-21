@@ -40,6 +40,10 @@ h6 {
   margin: 0 auto;
 }
 
+.container-xl {
+  width: 100%;
+}
+
 .container-sm {
   max-width: 1008px;
   padding-left: 15px;
@@ -47,8 +51,21 @@ h6 {
   margin: 0 auto;
 }
 
+.container-md {
+  max-width: 1216px;
+  margin: 0 15px 0 15px;
+}
+
 @media screen and (max-width: 768px) {
   .container {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+  }
+  .container-md {
+    margin: 0 40px 0 40px;
+  }
+  .container-sm {
     padding-left: 40px;
     padding-right: 40px;
     margin: 0 auto;
@@ -58,6 +75,17 @@ h6 {
   .container {
     padding-left: 20px;
     padding-right: 20px;
+    margin: 0 auto;
+  }
+  .container-md {
+    margin: 0 20px 0 20px;
+  }
+}
+@media screen and (min-width: 1216px) {
+  .container-md {
+    max-width: 1246px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
   }
 }
@@ -73,17 +101,90 @@ h6 {
 }
 
 .header {
-  top: 42px;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
+  background-image: url(./images/Background-desktop.png);
+  background-size: 100% 866px;
+  background-repeat: no-repeat;
+  margin-top: -80px;
 }
 
-.navbar {
+.section-hero {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 152px 0 74px 0;
+}
+.section-hero .content {
+  max-width: 696px;
+}
+.section-hero h1 {
+  font-size: 60px;
+  padding-bottom: 16px;
+  padding-top: 96px;
+}
+.section-hero p {
+  font-size: 18px;
+  color: #374151;
+  line-height: 28px;
+}
+.section-hero .buttons {
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.section-hero .buttons .btn-primary {
+  background-color: #7c3aed;
+  color: #fff;
+}
+.section-hero .buttons .btn-white {
+  color: #7c3aed;
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    background-image: url(./images/Background-tablet.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .section-hero {
+    flex-direction: column;
+    padding: 80px 0 80px 0;
+    align-items: center;
+    gap: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header .section-hero {
+    text-align: start;
+    padding: 156px 0 80px 0;
+  }
+  .header .section-hero h1 {
+    font-size: 48px;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header {
+    background-image: url(./images/Background-mobile.png);
+    background-size: 100% 1100px;
+    background-repeat: no-repeat;
+  }
+  .header .section-hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 116px 0 80px 0;
+    gap: 80px;
+  }
+  .header .section-hero h1 {
+    font-size: 36px;
+  }
+}
+.navbar .container {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .apps {
@@ -174,83 +275,9 @@ h6 {
   .apps {
     display: none;
   }
-}
-.header {
-  background-image: url(./images/Background-desktop.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-.section-hero {
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-  padding: 72px 0 74px 0;
-}
-.section-hero .content {
-  max-width: 696px;
-}
-.section-hero h1 {
-  font-size: 60px;
-  padding-bottom: 16px;
-  padding-top: 96px;
-}
-.section-hero p {
-  font-size: 18px;
-  color: #374151;
-  line-height: 28px;
-}
-.section-hero .buttons {
-  padding-top: 32px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-.section-hero .buttons .btn-primary {
-  background-color: #7c3aed;
-  color: #fff;
-}
-.section-hero .buttons .btn-white {
-  color: #7c3aed;
-}
-
-@media screen and (max-width: 992px) {
-  .header {
-    background-image: url(./images/Background-tablet.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  .section-hero {
-    flex-direction: column;
-    padding: 80px 0 80px 0;
-    align-items: center;
-    gap: 80px;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header .section-hero {
-    text-align: start;
-  }
-  .header .section-hero h1 {
-    font-size: 48px;
-    padding-top: 0;
-  }
-}
-@media screen and (max-width: 576px) {
-  .header {
-    background-image: url(./images/Background-mobile.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  .section-hero {
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 0 80px 0;
-    gap: 80px;
-  }
-  .section-hero h1 {
-    font-size: 36px;
+  .navbar #hamburger-btn {
+    display: block;
+    margin-left: auto;
   }
 }
 .section-clients {
@@ -258,7 +285,6 @@ h6 {
   padding-bottom: 25px;
   border-top: 1px solid #E5E7EB;
   border-bottom: 1px solid #E5E7EB;
-  margin-bottom: 10rem;
 }
 .section-clients .content {
   display: flex;
@@ -270,6 +296,219 @@ h6 {
 @media screen and (max-width: 992px) {
   .section-clients .content {
     flex-wrap: wrap;
+  }
+}
+.section-features {
+  padding: 96px 0 96px 0;
+}
+.section-features .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 64px;
+}
+.section-features .content .introduction h2 {
+  font-size: 48px;
+  margin-bottom: 8px;
+  line-height: 60px;
+}
+.section-features .content .introduction p {
+  font-size: 18px;
+  color: #111827;
+  max-width: 800px;
+  line-height: 28px;
+}
+.section-features .content .features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px 30px;
+  flex-wrap: wrap;
+}
+.section-features .content .features .feature {
+  max-width: 384px;
+}
+.section-features .content .features .feature .title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 40px;
+}
+.section-features .content .features .feature p {
+  line-height: 24px;
+}
+.section-features .content .features .feature img {
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .section-features {
+    padding: 80px 0 80px 0;
+  }
+  .section-features .content .introduction h2 {
+    font-size: 36px;
+  }
+  .section-features .content .features .feature {
+    max-width: 329px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section-features {
+    padding: 48px 0 48px 0;
+  }
+  .section-features .content {
+    gap: 48px;
+  }
+  .section-features .content .introduction h2 {
+    font-size: 48px;
+  }
+}
+.section-testimonials.container-xl {
+  background-color: #D5FAFC;
+}
+
+.section-testimonials {
+  padding: 120px 0 96px 0;
+}
+.section-testimonials .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.section-testimonials .content .introduction {
+  position: relative;
+  max-width: 488px;
+}
+.section-testimonials .content .introduction .quotes {
+  position: absolute;
+  top: -60px;
+  left: -104px;
+  z-index: 1;
+}
+.section-testimonials .content .introduction h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 60px;
+  z-index: 10;
+  position: relative;
+}
+.section-testimonials .content .introduction p {
+  font-size: 18px;
+  line-height: 28px;
+}
+.section-testimonials .content .testimonial {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 32px;
+}
+.section-testimonials .content .testimonial img {
+  margin-bottom: 32px;
+}
+.section-testimonials .content .testimonial.hubspot {
+  max-width: 384px;
+  margin-left: 102px;
+  margin-top: -200px;
+  height: fit-content;
+}
+.section-testimonials .content .testimonial.airbnb {
+  max-width: 488px;
+  margin-top: 74px;
+}
+.section-testimonials .content .testimonial.strapi {
+  max-width: 384px;
+  height: fit-content;
+}
+.section-testimonials .content .testimonial .testimonial-content {
+  position: relative;
+}
+.section-testimonials .content .testimonial .testimonial-content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.section-testimonials .content .testimonial .testimonial-content p {
+  font-size: 18px;
+  line-height: 28px;
+  padding-left: 32px;
+  margin-bottom: 24px;
+}
+.section-testimonials .content .testimonial .testimonial-content .author .name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0;
+  line-height: 28px;
+}
+.section-testimonials .content .testimonial .testimonial-content .author .position {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 0;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .section-testimonials .content .introduction .quotes {
+    top: -56px;
+    left: -10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .section-testimonials .content {
+    grid-template-columns: 1fr;
+  }
+  .section-testimonials .content .testimonial.airbnb,
+  .section-testimonials .content .testimonial.hubspot,
+  .section-testimonials .content .testimonial.strapi {
+    max-width: none;
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-testimonials {
+    padding: 120px 0 80px 0;
+  }
+  .section-testimonials .introduction {
+    margin-bottom: 16px;
+  }
+  .section-testimonials .content {
+    gap: 24px;
+  }
+  .section-testimonials .content .introduction {
+    max-width: none;
+  }
+  .section-testimonials .content .introduction .quotes {
+    top: -56px;
+    left: -20px;
+  }
+  .section-testimonials .content .introduction h2 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 564px) {
+  .section-testimonials {
+    padding: 80px 0 48px 0;
+  }
+  .section-testimonials .introduction {
+    margin-bottom: 10px;
+  }
+  .section-testimonials .content {
+    gap: 24px;
+  }
+  .section-testimonials .content .introduction .quotes {
+    max-width: 96px;
+    left: -8px;
+    top: -30px;
+  }
+  .section-testimonials .content .introduction h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .section-testimonials .content .introduction p {
+    font-size: 16px;
   }
 }
 

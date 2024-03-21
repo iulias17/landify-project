@@ -13,29 +13,31 @@
 </head>
 
 <!-- Navigation -->
+<nav class="navbar">
+    <div class="container">
+        <a href="#"><img src="./images/Logo.png" alt="" class="logo"></a>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" id="hamburger-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </label>
+        <ul class="links">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Careear</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+        <div class="apps">
+            <a href="#"><img src="./images/google play.png" alt=""></a>
+            <a href="#"><img src="./images/app store.png" alt=""></a>
+        </div>
+    </div>
+</nav>
 
+<!-- Header -->
 <header class="header">
     <div class="container">
-        <nav class="navbar">
-            <a href="#"><img src="./images/Logo.png" alt="" class="logo"></a>
-            <input type="checkbox" id="menu-toggle" />
-            <label for="menu-toggle" id="hamburger-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                    <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                </svg>
-            </label>
-            <ul class="links">
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Careear</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-            <div class="apps">
-                <a href="#"><img src="./images/google play.png" alt=""></a>
-                <a href="#"><img src="./images/app store.png" alt=""></a>
-            </div>
-        </nav>
-
         <div class="section-hero">
             <div class="content">
                 <h1>
@@ -57,11 +59,12 @@
                 <img src="./images/Mobile.png" alt="">
             </div>
         </div>
-
     </div>
 </header>
+
 <!-- Section Clients -->
-<div class="section-clients container">
+
+<section class="section-clients container-md">
     <div class="content">
         <img src="./images/airbnb.png" alt="">
         <img src="./images/hubspot.png" alt="">
@@ -70,7 +73,112 @@
         <img src="./images/walmart.png" alt="">
         <img src="./images/fedex.png" alt="">
     </div>
-</div>
+</section>
+
+<!-- Section Features -->
+<section class="section-features container">
+    <div class="container">
+        <div class="content">
+            <div class="introduction">
+                <h2>
+                    Tailor-made features
+                </h2>
+                <p>Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or
+                    visual presentation.</p>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <img src="./images/workflow.png" alt="">
+                    <p class="title">Robust workflow</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+                </div>
+                <div class="feature">
+                    <img src="./images/flexibility.png" alt="">
+                    <p class="title">Flexibility</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+                </div>
+                <div class="feature">
+                    <img src="./images/user-friendly.png" alt="">
+                    <p class="title">User Friendly</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+                </div>
+                <div class="feature">
+                    <img src="./images/layouts.png" alt="">
+                    <p class="title">Multiple Layouts</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+                </div>
+                <div class="feature">
+                    <img src="./images/components.png" alt="">
+                    <p class="title">Better Components</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+                </div>
+                <div class="feature">
+                    <img src="./images/organise.png" alt="">
+                    <p class="title">Well Organised</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Section Testimonials -->
+<section class="section-testimonials container-xl">
+    <div class="container-sm">
+        <div class="content">
+            <div class="introduction">
+                <img src="./images/quotes.png" alt="" class="quotes">
+                <h2>
+                    Real Stories from Real Customers
+                </h2>
+                <p>Get inspired by these stories.</p>
+            </div>
+            <div class="testimonial airbnb">
+                <img src="./images/airbnb2.png" alt="">
+                <div class="testimonial-content">
+                    <img src="./images/quotes-small.png" alt="" class="quotes-small">
+                    <p>I used landify and created a landing page for my startup within a week. The Landify UI Kit is
+                        simple and highly intuitive, so anyone can use it.</p>
+                    <div class="author">
+                        <p class="name">Jane Cooper</p>
+                        <p class="position">CEO, Airbnb</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial hubspot">
+                <img src="./images/hubspot2.png" alt="">
+                <div class="testimonial-content">
+                    <img src="./images/quotes-small.png" alt="" class="quotes-small">
+                    <p>To quickly start my startup landing page design, I was looking for a landing page UI Kit.
+                        Landify
+                        is one of the best landing page UI kit I have come across. It’s so flexible, well organised
+                        and
+                        easily editable.</p>
+                    <div class="author">
+                        <p class="name">Floyd Miles</p>
+                        <p class="position">Vice President, GoPro</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial strapi">
+                <img src="./images/strapi.png" alt="">
+                <div class="testimonial-content">
+                    <img src="./images/quotes-small.png" alt="" class="quotes-small">
+                    <p>Landify saved our time in designing my company page.</p>
+                    <div class="author">
+                        <p class="name">Kristin Watson</p>
+                        <p class="position">Co-Founder, Strapi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+</section>
 
 <body>
 

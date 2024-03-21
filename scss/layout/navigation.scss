@@ -1,15 +1,16 @@
-.header {
-  top: 42px;
-  left: 0;
-  width: 100%;
-  background-color: $color-white;
-}
+// .header {
+//   top: 42px;
+//   left: 0;
+//   width: 100%;
+//   background-color: $color-white;
+// }
 
-.navbar {
+.navbar .container {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .apps {
@@ -61,7 +62,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
   .navbar .logo a {
     font-size: 1.5rem;
   }
@@ -110,5 +110,10 @@
 
   .apps {
     display: none;
+  }
+
+  .navbar #hamburger-btn {
+    display: block;
+    margin-left: auto;
   }
 }

@@ -1,103 +1,12 @@
 // Aici punem toate stilurile pentru sectiuni
 
-.header {
-  background-image: url(./images/Background-desktop.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-.section-hero {
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-  padding: 72px 0 74px 0;
-
-  .content {
-    max-width: 696px;
-  }
-
-  h1 {
-    font-size: 60px;
-    padding-bottom: 16px;
-    padding-top: 96px;
-  }
-  p {
-    font-size: 18px;
-    color: $color-neutral-700;
-    line-height: 28px;
-  }
-
-  .buttons {
-    padding-top: 32px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-
-    .btn-primary {
-      background-color: $color-primary;
-      color: $color-white;
-    }
-
-    .btn-white {
-      color: $color-primary;
-    }
-  }
-}
-@media screen and (max-width: 992px) {
-  .header {
-    background-image: url(./images/Background-tablet.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-
-  .section-hero {
-    flex-direction: column;
-    padding: 80px 0 80px 0;
-    align-items: center;
-    gap: 80px;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .header {
-    .section-hero {
-      text-align: start;
-    }
-    .section-hero {
-      h1 {
-        font-size: 48px;
-        padding-top: 0;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .header {
-    background-image: url(./images/Background-mobile.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-
-  .section-hero {
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 0 80px 0;
-    gap: 80px;
-
-    h1 {
-      font-size: 36px;
-    }
-  }
-}
+// Section Clients
 
 .section-clients {
   padding-top: 25px;
   padding-bottom: 25px;
   border-top: 1px solid $color-neutral-200;
   border-bottom: 1px solid $color-neutral-200;
-  margin-bottom: 10rem;
 
   .content {
     display: flex;
@@ -111,6 +20,277 @@
   .section-clients {
     .content {
       flex-wrap: wrap;
+    }
+  }
+}
+
+// Section Features
+
+.section-features {
+  padding: 96px 0 96px 0;
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 64px;
+
+    .introduction {
+      h2 {
+        font-size: 48px;
+        margin-bottom: 8px;
+        line-height: 60px;
+      }
+
+      p {
+        font-size: 18px;
+        color: $color-neutral-900;
+        max-width: 800px;
+        line-height: 28px;
+      }
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 64px 30px;
+      flex-wrap: wrap;
+
+      .feature {
+        max-width: 384px;
+
+        .title {
+          font-size: 30px;
+          font-weight: 700;
+          margin-bottom: 8px;
+          line-height: 40px;
+        }
+
+        p {
+          line-height: 24px;
+        }
+
+        img {
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-features {
+    padding: 80px 0 80px 0;
+
+    .content {
+      .introduction h2 {
+        font-size: 36px;
+      }
+
+      .features .feature {
+        max-width: 329px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section-features {
+    padding: 48px 0 48px 0;
+
+    .content {
+      gap: 48px;
+
+      .introduction h2 {
+        font-size: 48px;
+      }
+    }
+  }
+}
+
+// Section Testimonials
+
+.section-testimonials.container-xl {
+  background-color: $color-secondary-light;
+}
+
+.section-testimonials {
+  padding: 120px 0 96px 0;
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+
+    .introduction {
+      position: relative;
+      max-width: 488px;
+
+      .quotes {
+        position: absolute;
+        top: -60px;
+        left: -104px;
+        z-index: 1;
+      }
+
+      h2 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        line-height: 60px;
+        z-index: 10;
+        position: relative;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+
+    .testimonial {
+      background-color: $color-white;
+      border-radius: 8px;
+      padding: 32px;
+
+      img {
+        margin-bottom: 32px;
+      }
+
+      &.hubspot {
+        max-width: 384px;
+        margin-left: 102px;
+        margin-top: -200px;
+        height: fit-content;
+      }
+
+      &.airbnb {
+        max-width: 488px;
+        margin-top: 74px;
+      }
+
+      &.strapi {
+        max-width: 384px;
+        height: fit-content;
+      }
+
+      .testimonial-content {
+        position: relative;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 28px;
+          padding-left: 32px;
+          margin-bottom: 24px;
+        }
+
+        .author {
+          .name {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 0;
+            line-height: 28px;
+          }
+
+          .position {
+            font-size: 14px;
+            color: $color-neutral-500;
+            margin-bottom: 0;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section-testimonials .content .introduction .quotes {
+    top: -56px;
+    left: -10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .section-testimonials {
+    .content {
+      grid-template-columns: 1fr;
+
+      .testimonial.airbnb,
+      .testimonial.hubspot,
+      .testimonial.strapi {
+        max-width: none;
+        margin-left: 0;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-testimonials {
+    padding: 120px 0 80px 0;
+
+    .introduction {
+      margin-bottom: 16px;
+    }
+
+    .content {
+      gap: 24px;
+
+      .introduction {
+        max-width: none;
+
+        .quotes {
+          top: -56px;
+          left: -20px;
+        }
+
+        h2 {
+          font-size: 36px;
+          line-height: 45px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 564px) {
+  .section-testimonials {
+    padding: 80px 0 48px 0;
+
+    .introduction {
+      margin-bottom: 10px;
+    }
+
+    .content {
+      gap: 24px;
+
+      .introduction {
+        .quotes {
+          max-width: 96px;
+          left: -8px;
+          top: -30px;
+        }
+
+        h2 {
+          font-size: 30px;
+          line-height: 40px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
     }
   }
 }

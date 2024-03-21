@@ -1,9 +1,14 @@
 // Aici punem stilurile pentru elementele care se repeta in pagina
+
 .container {
   max-width: 1246px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+.container-xl {
+  width: 100%;
 }
 
 .container-sm {
@@ -13,8 +18,23 @@
   margin: 0 auto;
 }
 
+.container-md {
+  max-width: 1216px;
+  margin: 0 15px 0 15px;
+}
+
 @media screen and (max-width: 768px) {
   .container {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+  }
+
+  .container-md {
+    margin: 0 40px 0 40px;
+  }
+
+  .container-sm {
     padding-left: 40px;
     padding-right: 40px;
     margin: 0 auto;
@@ -25,6 +45,19 @@
   .container {
     padding-left: 20px;
     padding-right: 20px;
+    margin: 0 auto;
+  }
+
+  .container-md {
+    margin: 0 20px 0 20px;
+  }
+}
+
+@media screen and (min-width: 1216px) {
+  .container-md {
+    max-width: 1246px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
   }
 }
