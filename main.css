@@ -46,6 +46,8 @@ h6 {
 
 .container-sm {
   max-width: 1008px;
+  padding-left: 40px;
+  padding-right: 40px;
   margin: 0 auto;
 }
 
