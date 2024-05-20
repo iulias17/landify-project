@@ -216,7 +216,7 @@
 @media screen and (max-width: 1200px) {
   .section-testimonials .content .introduction .quotes {
     top: -56px;
-    left: -10px;
+    left: -30px;
   }
 }
 
@@ -291,6 +291,416 @@
           font-size: 16px;
         }
       }
+    }
+  }
+}
+
+// Achievements
+
+.section-achievements {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 32px;
+  }
+
+  .introduction {
+    h2 {
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 60px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  .achievements {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 32px;
+  }
+
+  .achievement {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    img {
+      padding: 8px;
+    }
+  }
+
+  .strong {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 45px;
+  }
+}
+
+@media screen and (max-width: 1042px) {
+  .section-achievements {
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    .content {
+      grid-template-columns: 100%;
+      row-gap: 48px;
+
+      .introduction {
+        h2 {
+          font-size: 36px;
+          line-height: 45px;
+        }
+      }
+    }
+
+    .strong {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-achievements {
+    .content {
+      .introduction {
+        h2 {
+          font-size: 30px;
+          line-height: 40px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .regular {
+      font-size: 14px;
+    }
+
+    .strong {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .achievements {
+      display: grid;
+      grid-template-columns: 100%;
+      row-gap: 24px;
+    }
+  }
+}
+
+// Section Tools
+.section-tools {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .content {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    border-top: 1px solid $color-neutral-100;
+  }
+
+  .introduction {
+    max-width: 488px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    h2 {
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 60px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 1042px) {
+  .section-tools {
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    .content {
+      .introduction {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        h2 {
+          font-size: 36px;
+          line-height: 45px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-tools {
+    .content {
+      .introduction {
+        h2 {
+          font-size: 30px;
+          line-height: 40px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .section-tools {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .content {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .introduction {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+// Section Projects
+
+.section-projects.container-xl {
+  background-color: $color-secondary;
+}
+
+.section-projects {
+  .content {
+    display: flex;
+    gap: 32px;
+  }
+
+  .introduction {
+    width: 50%;
+    align-self: center;
+    justify-content: center;
+    margin-top: 111px;
+    margin-bottom: 111px;
+
+    h2 {
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 60px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 48px;
+    }
+  }
+
+  .badges {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      margin-bottom: 8px;
+    }
+  }
+
+  .mockup {
+    display: flex;
+    gap: 32px;
+  }
+
+  .phone-1 {
+    align-self: flex-start;
+  }
+
+  .phone-2 {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 1042px) {
+  .section-projects {
+    padding-top: 80px;
+    .content {
+      gap: 48px;
+      flex-direction: column;
+
+      .introduction {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        h2 {
+          font-size: 36px;
+          line-height: 45px;
+        }
+      }
+
+      .mockup {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-projects {
+    .content {
+      gap: 48px;
+
+      .introduction {
+        width: 100%;
+        h2 {
+          font-size: 30px;
+          line-height: 40px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        .apps {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .section-projects {
+    padding-top: 48px;
+
+    .content {
+      gap: 32px;
+
+      .introduction {
+        width: 100%;
+        margin-top: 0;
+      }
+
+      .mockup {
+        flex-direction: column;
+        max-width: 100%;
+        display: flex;
+
+        .phone-1,
+        .phone-2 {
+          max-width: 100%;
+        }
+      }
+
+      .phone-1,
+      .phone-2 {
+        align-self: center;
+      }
+
+      .apps {
+        display: block;
+      }
+    }
+  }
+}
+
+// Footer
+.footer {
+  background-color: $color-black;
+  color: $color-white;
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .copyright {
+    color: $color-neutral-300;
+    font-size: 14px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      color: $color-white;
+      text-decoration: none;
+    }
+  }
+
+  .top ul,
+  .bottom ul {
+    display: flex;
+    flex-direction: row;
+    row-gap: 12px;
+    column-gap: 24px;
+  }
+
+  .bottom ul {
+    flex-wrap: wrap;
+  }
+
+  .apps {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .content {
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 32px;
+      align-items: flex-start;
+    }
+
+    .apps {
+      margin-left: 0;
     }
   }
 }
