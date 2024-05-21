@@ -565,6 +565,11 @@
 
       .mockup {
         justify-content: center;
+        gap: 100px;
+
+        .phone-2 {
+          margin-top: 25%;
+        }
       }
     }
   }
@@ -590,6 +595,7 @@
         .apps {
           margin-left: 0;
         }
+
       }
     }
   }
@@ -611,10 +617,12 @@
         flex-direction: column;
         max-width: 100%;
         display: flex;
+        gap: 32px;
 
         .phone-1,
         .phone-2 {
           max-width: 100%;
+          margin-top: 0;
         }
       }
 

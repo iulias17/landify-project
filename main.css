@@ -724,6 +724,10 @@ h6 {
   }
   .section-projects .content .mockup {
     justify-content: center;
+    gap: 100px;
+  }
+  .section-projects .content .mockup .phone-2 {
+    margin-top: 25%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -760,10 +764,12 @@ h6 {
     flex-direction: column;
     max-width: 100%;
     display: flex;
+    gap: 32px;
   }
   .section-projects .content .mockup .phone-1,
   .section-projects .content .mockup .phone-2 {
     max-width: 100%;
+    margin-top: 0;
   }
   .section-projects .content .phone-1,
   .section-projects .content .phone-2 {
